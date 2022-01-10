@@ -16,4 +16,5 @@ GitHub
 			git add .
 			git commit -m "this is my first commit"
 			git push -u origin master
-		- 
+		- Pulling the changes:
+			git pull
