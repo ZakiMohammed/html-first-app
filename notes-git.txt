@@ -15,7 +15,7 @@ GitHub
 			git add .
 			git commit -m "this is my first commit"
 			git push -u origin master
-		- Pulling the changes:
-			git pull
 		- Cloning into another folder/machine:
 			git clone https://github.com/ZakiMohammed/html-first-app.git
+		- Pulling the changes:
+			git pull
