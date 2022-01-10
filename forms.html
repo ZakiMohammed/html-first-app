@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms Example</title>
+</head>
+
+<body>
+
+    <h1>Forms Example</h1>
+
+    <form action="forms.html" method="GET">
+
+        <!-- text -->
+        <div>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+        </div>
+
+        <br>
+
+        <!-- number -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter age">
+        </div>
+
+        <br>
+
+        <!-- password -->
+        <div>
+            <label for="txtPassword">Password</label>
+            <input type="password" id="txtPassword" name="password" placeholder="Enter password">
+        </div>
+
+        <br>
+
+        <!-- textarea (multiline text) -->
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" name="message" placeholder="Enter message"></textarea>
+        </div>
+
+        <br>
+
+        <!-- checkboxes -->
+        <div>
+            <label>Hobbies</label>
+            <input type="checkbox" id="sport" name="sport" value="Sport">
+            <label for="sport">Sport</label>
+
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reading">Reading</label>
+
+            <input type="checkbox" id="painting" name="painting" value="Painting">
+            <label for="painting">Painting</label>
+        </div>
+
+        <br>
+
+        <!-- radio -->
+        <div>
+            <label>Gender</label>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="doNotDisclose" name="gender" value="Do Not Disclose">
+            <label for="doNotDisclose">Do Not Disclose</label>
+        </div>
+        <div>
+            <label>Timing</label>
+
+            <input type="radio" id="weekday" name="timing" value="Weekday">
+            <label for="weekday">Weekday</label>
+
+            <input type="radio" id="weekend" name="timing" value="Weekend">
+            <label for="weekend">Weekend</label>
+        </div>
+
+        <br>
+
+        <!-- select -->
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="1001">India</option>
+                <option value="1002">France</option>
+                <option value="1003">Germany</option>
+                <option value="1004">US</option>
+            </select>
+        </div>
+
+        <br>
+
+        <!-- select (multiline) -->
+        <div>
+            <label for="subjects">Subjects</label>
+            <select id="subjects" name="subjects" multiple>
+                <option>Maths</option>
+                <option>Science</option>
+                <option>History</option>
+                <option>Geography</option>
+            </select>
+            Press Ctrl and select options
+        </div>
+
+        <br>
+
+        <!-- buttons -->
+        <div>
+            <!-- <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+            <input type="button" value="Help Me"> -->
+
+            <button type="submit">
+                <b>Save</b>
+            </button>
+            <button type="reset"><u>Reset</u></button>
+            <button type="button">Help Me</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

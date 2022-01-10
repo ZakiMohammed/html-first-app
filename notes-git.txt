@@ -1,0 +1,17 @@
+Source Control/Version Control/scm (source control manager):
+	- Control your code and projects (history, collaborations)
+	- Git, SVN, Team Foundation, ...
+	- Google Drive: Upload Folders (Bad)
+
+
+GitHub
+	- Online solution/portal for uploading your repository or projects
+	- It uses Git in the background
+	- GitHub Account
+	- Git Commands:
+		git init
+        git add .
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/ZakiMohammed/html-first-app.git
+        git push -u origin main

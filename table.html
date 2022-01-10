@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table Example</title>
+</head>
+
+<body>
+
+    <h1>Table Example</h1>
+
+    <!-- Employee table: No, Name, Salary -->
+    <table style="width: 100%;" border="1">
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Allen Green</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Smith Woods</td>
+                <td>2000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Total</th>
+                <th>3000</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <table style="width: 100%;" border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Product Name</th>
+                <th colspan="2">Location</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HP Laptop</td>
+                <td>Mumbai</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Dell Monitor</td>
+                <td>New York</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>Dell Keyboard</td>
+                <td>Delhi</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>HP Mouse</td>
+                <td rowspan="2">Kolkata</td>
+                <td rowspan="2">India</td>
+            </tr>
+            <tr>
+                <td>Canon Camera</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

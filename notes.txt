@@ -1,0 +1,126 @@
+HTML:
+    - Hyper Text Markup Language
+    - Format (.html)
+    - Can be run on any browser (Chrome, Firefox)
+    - App: Websites (Home, About, Contact), Web Applications
+    - HTML, CSS, JS, IMG
+    - HTTP: Hyper Text Transfer Protocol (https)
+        - Use to transfer data between client-server
+    - Search: googl.com -> HTTP => .html/css/js
+
+    - Tag/Element:
+        <html></html>
+        <head></head>
+        <body></body>
+    - Attribute/Properties:
+        <ol type="A">
+        <tag name="value">
+    - Empty Tags:
+        <hr><br><input>
+
+HTML Tables:
+    - Elements:
+        - thead - heading
+        - tbody - content
+        - tfoot - footer
+        - tr - table row
+        - th - table heading
+        - td - table data
+    - Attributes of td/th:
+        - rowspan - Spanning through rows
+        - colspan - Spanning through col
+
+Label Element:
+    - Use to display label against an input element
+    - The for attribute focuses the corresponding input control
+Input Elements:
+    - Text
+    - Number
+    - Password
+    - Textarea - Multi line input field
+    - Checkboxes
+    - Radio
+    - Select - dropdown options
+    - Multi Select
+    - Hidden
+    - Button
+
+Element Inline/Block:
+    - Inline
+        - label, input, anchor, img, ...
+    - Block
+        - h1-h6, div, p, ...
+
+Form:
+    - Form use to submit data to server
+    - All the input elements will be submitted to server
+    - The input element must have "name" attribute
+    - The server will receive name and value pair on the server as form data
+    - Submit -> Server (fullName="John", age=28)
+    - We have action attribute:
+        - method: get, post (default: get)
+        - action: path to server URL to perform some operation (default: the same page)
+    - Scenarios:
+        1. Method: '', Action: '':
+            - Method: GET, Action: Same page (form.html)
+            - Client -> form.html?queryString -> Server
+            - Server -> form.html?queryString -> Client
+        2. Method: 'POST', Action: URL:
+            - Client -> form.html [POST: body] -> Server
+            - Server -> form.html -> Client
+    - Query String:
+        - A part of URL which consist of data in the form key and value pair separated by &
+        - Syntax: ?key1=value1&key2=value2&...&keyN=valueN
+        - Example: ?fullName=Clark+Kent&age=12
+        - It is used to pass data to server between page navigation or form submission
+        - When you use method=GET in form you get the query string
+        - Example:
+            http://127.0.0.2:5500/forms.html
+            ?
+            fullName=John+Marshal&
+            age=12&
+            password=123&
+            message=Hello&
+            sport=Sport&
+            painting=Painting&
+            gender=Do+Not+Disclose&
+            timing=Weekday&
+            country=1003&
+            subjects=Maths&
+            subjects=Science&
+            subjects=History
+    - HTTP:
+        - Methods: GET, POST, PUT, DELETE, OPTIONS, PATCH, ...,
+        - Response Status Codes: 
+            - Informational responses (100–199)
+            - Successful responses (200–299)
+                - 200 => OK
+                - 201 => Crated
+                - 204 => No Content
+            - Redirection messages (300–399)
+            - Client error responses (400–499)
+                - 404 => Not Found
+                - 401 => Unauthorized
+                - 403 => Forbidden
+                - 405 => Method Not Allowed
+            - Server error responses (500–599)
+                - 500 => Server error
+                - 502 => Bad Gateway
+                - 503 => Service Unavailable
+    - GET vs POST:
+        - Security:
+            - GET the data is sent in the form of query string -> expose data to the user -> security issue
+            - POST the data is sent in the form of POST body -> data is not exposed -> good for security
+        - Size Limitation:
+            - GET: We have a URL size limitation
+            - POST: We don't have any size limitation
+
+Interview:
+    1. What is the difference between id and name attribute
+    2. Why we use a form element?
+    3. What is action attribute in form element?
+    4. What is method attribute in form element?
+    5. What is GET and POST?
+    6. What is difference between GET and POST?
+    7. What are the different HTTP methods are there apart form GET and POST?
+    8. What are the status codes of HTTP response?
